@@ -1,0 +1,35 @@
+# Ignorar node_modules local
+node_modules
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Ignorar archivos de salida
+.next
+out
+dist
+
+# Ignorar archivos de configuración locales y entornos
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignorar archivos de control de versiones y sistemas de desarrollo
+.git
+.gitignore
+.DS_Store
+.vscode
+.idea
+*.swp
+
+# Ignorar Dockerfile, docker-compose.yml (dependiendo de tu uso)
+Dockerfile
+docker-compose.yml
+
+# Ignorar carpetas de pruebas y datos que no sean necesarias en producción
+__tests__
+test
+coverage
+*.md
