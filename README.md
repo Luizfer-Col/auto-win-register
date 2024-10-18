@@ -18,21 +18,15 @@ Este es un minisite funcional desarrollado con Next.js para la recolección de d
 
 ## Capturas de Pantalla
 
-### Formulario de Registro - Vista Desktop
+### Vista Desktop
 
-![Formulario de Registro - Desktop](./public/images/register_desktop.png)
+![Formulario de Registro - Desktop](./public/images/register_desktop.jpg)
 
-### Formulario de Registro - Vista Mobile
+![Registro Completado - Desktop](./public/images/confirm_desktop.jpg)
 
-![Formulario de Registro - Mobile](./public/images/register_mobile.png)
+### Vista Mobile
 
-### Registro Completado - Vista Desktop
-
-![Registro Completado - Desktop](./public/images/confirm_desktop.png)
-
-### Registro Completado - Vista Mobile
-
-![Registro Completado - Mobile](./public/images/confirm_mobile.png)
+![Formulario de Registro - Mobile](./public/images/register_mobile.jpg) ![Registro Completado - Mobile](./public/images/confirm_mobile.jpg)
 
 ## Requisitos
 
