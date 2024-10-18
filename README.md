@@ -28,6 +28,11 @@ Este es un minisite funcional desarrollado con Next.js para la recolección de d
 
 ![Formulario de Registro - Mobile](./public/images/register_mobile.jpg) ![Registro Completado - Mobile](./public/images/confirm_mobile.jpg)
 
+## Despliegue
+
+Puede visualizar el despliegue de esta aplicacion en el siguiente enlace: 
+https://auto-win-register-one.vercel.app/
+
 ## Requisitos
 
 - [Node.js](https://nodejs.org/) (versión 12 o superior)
