@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Proyecto de Landing Page - Next.js
 
-## Getting Started
+Este es un minisite funcional desarrollado con Next.js para la recolección de datos de clientes actuales de una compañía
 
-First, run the development server:
+## Características
+
+- Registro de usuario con los siguientes campos:
+  - Nombre (obligatorio)
+  - Apellido (obligatorio)
+  - Cédula (obligatorio)
+  - Departamento (obligatorio)
+  - Ciudad (obligatorio, dependiente del departamento)
+  - Celular (obligatorio)
+  - Correo Electrónico (obligatorio)
+  - Campo de Habeas Data (obligatorio)
+- Generación de un código alfanumérico al completar el registro.
+- Visualizaciones para el formulario de captura de datos y el registro completado.
+
+## Capturas de Pantalla
+
+### Formulario de Registro - Vista Desktop
+
+![Formulario de Registro - Desktop](./public/images/register_desktop.png)
+
+### Formulario de Registro - Vista Mobile
+
+![Formulario de Registro - Mobile](./public/images/register_mobile.png)
+
+### Registro Completado - Vista Desktop
+
+![Registro Completado - Desktop](./public/images/confirm_desktop.png)
+
+### Registro Completado - Vista Mobile
+
+![Registro Completado - Mobile](./public/images/confirm_mobile.png)
+
+## Requisitos
+
+- [Node.js](https://nodejs.org/) (versión 12 o superior)
+- [Docker](https://www.docker.com/) (opcional, pero recomendado para facilitar el despliegue)
+
+## Instalación
+
+### Clonar el repositorio
+
+```bash
+git clone <URL_DEL_REPOSITORIO>
+cd <NOMBRE_DEL_REPOSITORIO>
+```
+
+### Instalación de dependencias
+
+```bash
+npm install
+```
+
+## Ejecución local
+
+Para ejecutar el proyecto en tu máquina local, utiliza el siguiente comando:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+El proyecto estará disponible en `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Docker
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Para ejecutar el proyecto utilizando Docker, sigue estos pasos:
 
-## Learn More
+### 1. Instalar Docker
 
-To learn more about Next.js, take a look at the following resources:
+Asegúrate de que Docker esté instalado en tu sistema. Si no lo tienes, puedes seguir las [instrucciones de instalación de Docker](https://docs.docker.com/get-docker/) para tu sistema operativo.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Construir y ejecutar el contenedor
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Con Docker instalado, ejecuta el siguiente comando en el directorio raíz del proyecto:
 
-## Deploy on Vercel
+```bash
+docker-compose up --build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este comando construirá la imagen del contenedor y lo ejecutará. El proyecto estará disponible en `http://localhost:3000`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Detener el contenedor
+
+Para detener el contenedor, presiona `Ctrl + C` en la terminal donde está ejecutándose Docker.
+
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo `LICENSE`.
